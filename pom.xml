@@ -14,6 +14,11 @@
     <cxf.version>2.6.1</cxf.version>
   </properties>
   <dependencies>
+<dependency>
+        <groupId>se.walkercrou</groupId>
+        <artifactId>google-places-api-java</artifactId>
+        <version>2.1.2</version>
+    </dependency>
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
