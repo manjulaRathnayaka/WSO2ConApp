@@ -152,9 +152,9 @@ Now we are ready with the sample application for QA. Lets branch out and promote
 As the QA person, lets try to find few bugs, create issue tickets and demote the application back to Development.
 
 1. Move to **Issues** page and create a new Issue. Make sure to select newly created version(1.0.0) for reporting the issues.
-  a. Everyone can access this application, not secured
-  b. No UI validation is done
-  c. Date field has invalid value
+  1. Everyone can access this application, not secured
+  2. No UI validation is done
+  3. Date field has invalid value
 2. Go to **Life Cycle Management** page, and click on **Demote**. Select the issues we created above and demote with a comment such as Can not proceed to production with above bugs
 
 Let's assume we have fixed the above issues :)
