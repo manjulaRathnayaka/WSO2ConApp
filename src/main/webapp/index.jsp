@@ -105,6 +105,10 @@
             </table>
 
             <%
+                }else{
+                    %>
+                <a href="search.jsp">Search Places You Travelled.</a>
+                <%
                 }
             %>
 
