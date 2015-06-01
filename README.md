@@ -28,7 +28,7 @@ Let's create a property to retrieve this key:
 2. Name the property as 'googleAPIKey'
 3. Paste the key as Value 
 
-Go to **Repos and Builds** page and click on edit to start coding using cloud IDE.
+Go to **Repos and Builds** page and click the **Edit** button to start coding using cloud IDE.
 
 Update pom.xml with dependency:
 
@@ -45,6 +45,8 @@ Let's create a class with name 'PlaceAPIDataRetriever' and try to get google pla
 3. Once clone is completed, expand the source and go to src/main/java/com.HelloApp
 4. Right click on com.HelloApp and select New --> Java Class. Name the class as 'PlaceAPIDataRetriever'
 5. Copy and paste the code from https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java to complete the PlaceAPIDataRetriever.java class.
+
+*Note: In this tutorial we create all files manually in the cloud IDE. Instead, you can actually import the whole GIT project (if you have a local GIT client installed) by following this tutorial: https://docs.wso2.com/display/AppCloud/Create+an+Application+with+your+Source+Code*
 
 Notice the special code segment used to read the 'googleAPIKey' value:
 
