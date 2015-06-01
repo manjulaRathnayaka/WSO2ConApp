@@ -28,8 +28,9 @@ Let's create a property to retrieve this key:
 2. Name the property as 'googleAPIKey'
 3. Paste the key as Value 
 
-Go to Repo and Build page and click on edit to start coding using cloud IDE.
-Lets create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library.
+Go to **Repos and Builds** page and click on edit to start coding using cloud IDE.
+
+Let's create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library.
 			
 Update pom.xml with dependency:
 
@@ -39,7 +40,7 @@ Update pom.xml with dependency:
 			<version>2.1.2</version>
     		</dependency>
     		
-Create class and write business logic. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
+Create class and write business logic. Copy and paste the sample code from: https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
 
 Notice the special code segment used to read the 'googleAPIKey' value:
 
@@ -66,22 +67,33 @@ Notice the special code segment used to read the 'googleAPIKey' value:
 		}
 		return propValue;
 	}
-Make sure to change applicationKey name in above class.
-create a JSP page called ‘search.jsp’ and use ‘searchPlace’ method to retrieve search results. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/search.jsp
-After you have completed above steps, commit the changes following below steps. If you missed to push changes, you will loose all the changes done.
-On the File menu, click Save All
-On the Git menu, click Add to index
-On the Git menu, click Commit
-On the Git menu, click Remotes / Push
+	
+If you called your property or application differently, make sure to change applicationKey name and resource path in above class.
+
+Create a JSP page called ‘search.jsp’ and use ‘searchPlace’ method to retrieve search results. 
+
+The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/search.jsp
+
+After you have completed above steps, commit the changes following below steps. If you missed to push changes, you will lose all the changes done:
+
+1. On the File menu, click Save All
+2. On the Git menu, click Add to index
+3. On the Git menu, click Commit
+4. On the Git menu, click Remotes / Push
 
 Now you should be able to access your newly created search.jsp and search results.
 
 Let's create a database to store place details searched in above page.
-Go to the database section and add new database.
-	Provide a name such as ‘PlaDB’.
-	Select the ‘Development’ environment.
-	Provide a strong password which is required later for configuring the data source.
-After you have successfully creating the DB, click on the created database and find the database url and user. Then connect to this database using a sql client and execute below commands. This will populate the table for storing the place details.
+
+Go to the **Databases** section and add new database:
+
+1. Provide a name such as ‘PlaDB’
+2. Select the ‘Development’ environment
+3. Provide a strong password which is required later for configuring the data source
+
+After you have successfully creating the DB, click on the created database and find the database URL and username. 
+
+Connect to this database using a SQL client and execute below commands. This will populate the table for storing the place details:
 
 	mysql -h mysql-dev-01.cloud.wso2.com -u<user> -p
 	show databases;
