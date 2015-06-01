@@ -113,9 +113,9 @@ Connect to this database using a SQL client and execute below commands. This wil
 
 Next create a datasource with name ‘PlacesDS’ from runtime configs → Datasources → create datasource. Keep the defaults as it is and provide the password given for ‘PlaDB’.	
 
-Create PlaceDetail.java bean class. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetail.java
+Create PlaceDetail.java bean class in path src/main/java/com.HelloApp. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetail.java
 
-Create the DAO class for inserting and reading data from above table using the datasource. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetailDAO.java
+Create the DAO class(PlaceDetailDAO) in path src/main/java/com.HelloApp for inserting and reading data from above table using the datasource. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetailDAO.java
 
 Notice the special code segment used to lookup the datasource:
 
@@ -140,7 +140,7 @@ Update the index.jsp page to list stored place information. The sample code is f
  
 Let's add another page to store searched place details with additional information such as user name, date, comments, image links, etc.
 
-Name the page as ‘save.jsp’ and sample code can be found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/save.jsp
+Name the page as ‘save.jsp’ in path src/main/webapp/ and sample code can be found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/save.jsp
 
 Finally for making the UI better, add the images and css directories found at:
 
