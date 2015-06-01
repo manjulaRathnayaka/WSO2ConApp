@@ -143,23 +143,29 @@ Commit and git push all the changes done.
 Open the new application, once the build and deployment processes finish. Note that application gets an internal URL similar to https://appserver.test.cloud.wso2.com/t/manjulaorg/webapps/mytravellog-1.0.0 - now we will work on promoting it to production so it gets production URL.
 
 Now we are ready with the sample application for QA. Lets branch out and promote to QA.
-Go to Repo and Build page → Create branch from trunk.
-From the Overview page, click on Deploy or Open newly created version. 
-Next, from the Life Cycles Management page, select the newly created version and promote to Testing.
-Go back to Overview page to Open the promoted application in Testing environment.
+
+1. Go to **Repo and Build page → Create branch from trunk**
+2. From the **Overview** page, click on **Deploy** or **Open** newly created version
+3. Next, from the **Life Cycles Management** page, select the newly created version and promote to Testing
+4. Go back to **Overview** page to Open the promoted application in Testing environment
 
 As the QA person, lets try to find few bugs, create issue tickets and demote the application back to Development.
-Move to Issues page and create a new Issue. Make sure to select newly created version(1.0.0) for reporting the issues.
-	Everyone can access this application, not secured. 
-	No UI validation is done…
-	Date field has invalid value…
-Go to Life Cycle Management page, and click on Demote. Select the issues we created above and demote with a comment such as Can not proceed to production with above bugs.
+
+1. Move to **Issues** page and create a new Issue. Make sure to select newly created version(1.0.0) for reporting the issues.
+
+	a. Everyone can access this application, not secured
+	
+	b. No UI validation is done
+	
+	c. Date field has invalid value
+	
+
+2. Go to **Life Cycle Management** page, and click on **Demote**. Select the issues we created above and demote with a comment such as Can not proceed to production with above bugs.
 
 Let's assume we have fixed the above issues :)
 Promote back to Testing.
 
 QA promote to Production. As the DevOps, lets create new database and update runtime configs.
-
 	
 
 
