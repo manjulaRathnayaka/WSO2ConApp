@@ -42,6 +42,14 @@ Update pom.xml with dependency:
     		
 Create class and write business logic. Copy and paste the sample code from: https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
 
+
+To create a new file and update the code:
+
+1. Click on edit from the **Repos and Build** page
+2. Provide the authorization to codenvy cloud editor to clone the code
+3. Once clone is completed, expand the source and go to src/main/java/com.HelloApp
+4. Right click on com.HelloApp and select New --> Java Class. Name the class as 'PlaceAPIDataRetriever'
+
 Notice the special code segment used to read the 'googleAPIKey' value:
 
 	private String getGoogleAPIKey(String applicationKey){
