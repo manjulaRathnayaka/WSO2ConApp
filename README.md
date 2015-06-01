@@ -23,6 +23,7 @@ This application will be using Google Places API Keys - pick any of these or gen
 	AIzaSyDQOhLqVwb5u-tH20F2SJf0RC2QegLa5-8
 
 Let's create a property to retrieve this key: 
+
 1. Click on **Runtime Configs → Properties → Add Property** button
 2. Name the property as 'googleAPIKey'
 3. Paste the key as Value 
