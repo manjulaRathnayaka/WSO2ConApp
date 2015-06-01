@@ -107,7 +107,8 @@ Next create a datasource with name ‘PlacesDS’ from runtime configs → Datas
 Create PlaceDetail.java bean class. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetail.java
 
 Create the DAO class for inserting and reading data from above table using the datasource. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetailDAO.java
-Notice the special code segment used to lookup the datasource.
+
+Notice the special code segment used to lookup the datasource:
 
 	private DataSource getDataSource() {
 	        DataSource dataSource = null;
@@ -128,13 +129,18 @@ Notice the special code segment used to lookup the datasource.
 		
 Update the index.jsp page to list stored place information. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/index.jsp
  
-Lets add another page to store searched place details with additional information such as user name, date, comments, image links etc.
+Let's add another page to store searched place details with additional information such as user name, date, comments, image links, etc.
+
 Name the page as ‘save.jsp’ and sample code can be found at https://github.com/manjulaRathnayaka/WSO             2ConApp/blob/master/src/main/webapp/save.jsp
 
-Finally for making the UI better, add the images and css directories found at https://github.com/manjulaRathnayaka/WSO2ConApp/tree/master/src/main/webapp/css
-https://github.com/manjulaRathnayaka/WSO2ConApp/tree/master/src/main/webapp/images
+Finally for making the UI better, add the images and css directories found at:
 
-Commit and git push all the changes done. You should be able to access your application after completing the deployment and it should looks like similar to https://appserver.test.cloud.wso2.com/t/manjulaorg/webapps/mytravellog-1.0.0
+* https://github.com/manjulaRathnayaka/WSO2ConApp/tree/master/src/main/webapp/css
+* https://github.com/manjulaRathnayaka/WSO2ConApp/tree/master/src/main/webapp/images
+
+Commit and git push all the changes done. 
+
+Open the new application, once the build and deployment processes finish. Note that application gets an internal URL similar to https://appserver.test.cloud.wso2.com/t/manjulaorg/webapps/mytravellog-1.0.0 - now we will work on promoting it to production so it gets production URL.
 
 Now we are ready with the sample application for QA. Lets branch out and promote to QA.
 Go to Repo and Build page → Create branch from trunk.
