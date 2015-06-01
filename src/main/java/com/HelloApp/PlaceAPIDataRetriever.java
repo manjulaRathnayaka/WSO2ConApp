@@ -16,7 +16,7 @@ public class PlaceAPIDataRetriever {
 	private static Log log = LogFactory.getLog(PlaceAPIDataRetriever.class);
 
 	public List<Place> searchPlace(String place){
-		String applicationName = "testwebapp";
+		String applicationName = "mytravellog";
 		String googleAPIKey = getGoogleAPIKey(applicationName);
 		if (googleAPIKey == null) {
 			googleAPIKey = "AIzaSyA6PwPjtTEkzTNrU09BFkYtct2E9CovVYM";
