@@ -49,6 +49,7 @@ To create a new file and update the code:
 2. Provide the authorization to codenvy cloud editor to clone the code
 3. Once clone is completed, expand the source and go to src/main/java/com.HelloApp
 4. Right click on com.HelloApp and select New --> Java Class. Name the class as 'PlaceAPIDataRetriever'
+5. Copy and paste the code from https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java to complete the PlaceAPIDataRetriever.java class.
 
 Notice the special code segment used to read the 'googleAPIKey' value:
 
