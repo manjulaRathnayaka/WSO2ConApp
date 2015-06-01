@@ -15,16 +15,17 @@ In the application home view, wait till build and deploy processes finish (watch
 
 We will be using a google place API to search places, so you can use below keys to try out the sample application.
 
-Keys
-====
+This application will be using Google Places API Keys - pick any of these or generate one of your own with Google:
+
 	AIzaSyCOuoI5b09xD6GWkETlmhycKwmnGgt-PGE
 	AIzaSyDPwttUXqFOVw0GoAYW9z9xv49v3x-xI6Y
 	AIzaSyAuDPfSxtJUnizJaNVahtjMko7EjThJh6Y
 	AIzaSyDQOhLqVwb5u-tH20F2SJf0RC2QegLa5-8
 
-Let's create a property to retrieve this key. 
-	Click on runtime configs → Properties → Add Property button.
-	Name the property as 'googleAPIKey' and value taken from above step. 
+Let's create a property to retrieve this key: 
+1. Click on **Runtime Configs → Properties → Add Property** button,
+2. Name the property as 'googleAPIKey',
+3. Paste the key as Value 
 
 Go to Repo and Build page and click on edit to start coding using cloud IDE.
 Lets create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library.
