@@ -1,18 +1,24 @@
 WSO2Con AppCloud Tutorial Steps
+====
 
 Register in https://cloud.wso2.com and login in.
+
 Create a Java web application.
+
 	Give a name like MyTravelLog.
 	Optionally, select an Icon for your application.
 	Create the app.
+
 In the overview page, click on Deploy or Open button to check the default Hello World page.
+
 We will be using a google place API to search places, so you can use below keys to try out the sample application.
+
 Keys
 ====
-AIzaSyCOuoI5b09xD6GWkETlmhycKwmnGgt-PGE
-AIzaSyDPwttUXqFOVw0GoAYW9z9xv49v3x-xI6Y
-AIzaSyAuDPfSxtJUnizJaNVahtjMko7EjThJh6Y
-AIzaSyDQOhLqVwb5u-tH20F2SJf0RC2QegLa5-8
+	AIzaSyCOuoI5b09xD6GWkETlmhycKwmnGgt-PGE
+	AIzaSyDPwttUXqFOVw0GoAYW9z9xv49v3x-xI6Y
+	AIzaSyAuDPfSxtJUnizJaNVahtjMko7EjThJh6Y
+	AIzaSyDQOhLqVwb5u-tH20F2SJf0RC2QegLa5-8
 
 Let's create a property to retrieve this key. 
 	Click on runtime configs → Properties → Add Property button.
