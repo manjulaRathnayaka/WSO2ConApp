@@ -3,11 +3,13 @@ WSO2Con AppCloud Tutorial Steps
 
 Register in https://cloud.wso2.com and login in.
 
-Create a Java web application.
+Create a Java web application:
 
-	Give a name like MyTravelLog.
-	Optionally, select an Icon for your application.
-	Create the app.
+1. Give a name like MyTravelLog.
+
+2. Optionally, select an Icon for your application.
+
+3. Create the app.
 
 In the overview page, click on Deploy or Open button to check the default Hello World page.
 
@@ -27,14 +29,18 @@ Let's create a property to retrieve this key.
 Go to Repo and Build page and click on edit to start coding using cloud IDE.
 Lets create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library.
 			
-	update pom.xml with dependency.
+Update pom.xml with dependency:
+
 		<dependency>
 			<groupId>se.walkercrou</groupId>
 			<artifactId>google-places-api-java</artifactId>
 			<version>2.1.2</version>
     		</dependency>
-	create class and write business logic. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
-	Notice the special code segment used to read the 'googleAPIKey' value.
+    		
+Create class and write business logic. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
+
+Notice the special code segment used to read the 'googleAPIKey' value:
+
 	private String getGoogleAPIKey(String applicationKey){
 		String propValue = null;
 		String resourcePath = "/dependencies/"+applicationKey+"/googleAPIKey";
