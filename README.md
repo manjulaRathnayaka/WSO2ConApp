@@ -11,7 +11,7 @@ Create a Java web application:
 2. Optionally, select an Icon for your application
 3. Create the app
 
-In the overview page, click on Deploy or Open button to check the default Hello World page.
+In the application home view, click on Deploy or Open button to check the default Hello World page.
 
 We will be using a google place API to search places, so you can use below keys to try out the sample application.
 
