@@ -158,11 +158,12 @@ As the QA person, lets try to find few bugs, create issue tickets and demote the
 2. Go to **Life Cycle Management** page, and click on **Demote**. Select the issues we created above and demote with a comment such as Can not proceed to production with above bugs
 
 Let's assume we have fixed the above issues :)
-Promote back to Testing.
+Promote the application back to Testing. Then promote to Production.
 
-QA promote to Production. As the DevOps, lets create new database and update runtime configs.
-	
+Got back to the application Overview tab and Open the application in production. Note that it got the production URL now. If you have a URL that you own, you can assign it here instead of the default one.
 
+Optionally, if you have time, separate your development and production data: 
 
-
-
+1. Repeat the database steps above to create a new database now in Production environment (instead of Development),
+2. In **Runtime Configs**, open the datasource, and change Production database link to the newly created production database,
+3. Note that as you are promoting and demoting your application, the corresponding data gets displayed.
