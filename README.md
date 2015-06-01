@@ -131,7 +131,7 @@ Update the index.jsp page to list stored place information. The sample code is f
  
 Let's add another page to store searched place details with additional information such as user name, date, comments, image links, etc.
 
-Name the page as ‘save.jsp’ and sample code can be found at https://github.com/manjulaRathnayaka/WSO             2ConApp/blob/master/src/main/webapp/save.jsp
+Name the page as ‘save.jsp’ and sample code can be found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/save.jsp
 
 Finally for making the UI better, add the images and css directories found at:
 
