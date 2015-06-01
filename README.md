@@ -30,8 +30,6 @@ Let's create a property to retrieve this key:
 
 Go to **Repos and Builds** page and click on edit to start coding using cloud IDE.
 
-Let's create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library.
-			
 Update pom.xml with dependency:
 
 		<dependency>
@@ -40,10 +38,7 @@ Update pom.xml with dependency:
 			<version>2.1.2</version>
     		</dependency>
     		
-Create class and write business logic. Copy and paste the sample code from: https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
-
-
-To create a new file and update the code:
+Let's create a class with name 'PlaceAPIDataRetriever' and try to get google place api data using a open source java library. We will create class and write business logic using sample code from: https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceAPIDataRetriever.java
 
 1. Click on edit from the **Repos and Build** page
 2. Provide the authorization to codenvy cloud editor to clone the code
