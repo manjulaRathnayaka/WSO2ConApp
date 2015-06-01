@@ -80,12 +80,13 @@ Go to the database section and add new database.
 	Select the ‘Development’ environment.
 	Provide a strong password which is required later for configuring the data source.
 After you have successfully creating the DB, click on the created database and find the database url and user. Then connect to this database using a sql client and execute below commands. This will populate the table for storing the place details.
-mysql -h mysql-dev-01.cloud.wso2.com -u<user> -p
-show databases;
-use <your database>;
-CREATE TABLE IF NOT EXISTS PlaceDetails ( Name VARCHAR (100), UserName VARCHAR (20), Address VARCHAR(100), Latitude DOUBLE, Longitude DOUBLE, GoogleURL VARCHAR(100), IconURL VARCHAR(100), VisitedDate DATE, Comment Text, CONSTRAINT PLACE_PKEY PRIMARY KEY (Name, UserName,VisitedDate) );
 
-insert into PlaceDetails() values("Acadia National Park", "User Foo", "Maine, United States", 44.338556, -68.273335, "https://plus.google.com/107246219091349403167/about?hl=en-US", "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png", "0033-11-05", "comment");
+	mysql -h mysql-dev-01.cloud.wso2.com -u<user> -p
+	show databases;
+	use <your database>;
+	CREATE TABLE IF NOT EXISTS PlaceDetails ( Name VARCHAR (100), UserName VARCHAR (20), Address VARCHAR(100), Latitude DOUBLE, Longitude DOUBLE, GoogleURL VARCHAR(100), IconURL VARCHAR(100), VisitedDate DATE, Comment Text, CONSTRAINT PLACE_PKEY PRIMARY KEY (Name, UserName,VisitedDate) );
+	
+	insert into PlaceDetails() values("Acadia National Park", "User Foo", "Maine, United States", 44.338556, -68.273335, "https://plus.google.com/107246219091349403167/about?hl=en-US", "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png", "0033-11-05", "comment");
 
 Next create a datasource with name ‘PlacesDS’ from runtime configs → Datasources → create datasource. Keep the defaults as it is and provide the password given for ‘PlaDB’.	
 
