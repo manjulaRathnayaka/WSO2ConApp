@@ -104,7 +104,7 @@ Connect to this database using a SQL client and execute below commands. This wil
 	mysql -h mysql-dev-01.cloud.wso2.com -u<user> -p
 	show databases;
 	use <your database>;
-	CREATE TABLE IF NOT EXISTS PlaceDetails ( Name VARCHAR (100), UserName VARCHAR (20), Address VARCHAR(100), Latitude DOUBLE, Longitude DOUBLE, GoogleURL VARCHAR(100), IconURL VARCHAR(100), VisitedDate DATE, Comment Text, CONSTRAINT PLACE_PKEY PRIMARY KEY (Name, UserName,VisitedDate) );
+	CREATE TABLE IF NOT EXISTS PlaceDetails ( Name VARCHAR (100), UserName VARCHAR (100), Address VARCHAR(100), Latitude DOUBLE, Longitude DOUBLE, GoogleURL VARCHAR(100), IconURL VARCHAR(100), VisitedDate DATE, Comment Text, CONSTRAINT PLACE_PKEY PRIMARY KEY (Name, UserName,VisitedDate) );
 	
 	insert into PlaceDetails() values("Acadia National Park", "User Foo", "Maine, United States", 44.338556, -68.273335, "https://plus.google.com/107246219091349403167/about?hl=en-US", "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png", "0033-11-05", "comment");
 
