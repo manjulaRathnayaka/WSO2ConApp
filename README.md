@@ -93,21 +93,22 @@ Create PlaceDetail.java bean class. The sample code is found at https://github.c
 
 Create the DAO class for inserting and reading data from above table using the datasource. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/java/com/HelloApp/PlaceDetailDAO.java
 Notice the special code segment used to lookup the datasource.
-private DataSource getDataSource() {
-        DataSource dataSource = null;
-        Hashtable<String, String> env = new Hashtable<String, String>();
-        try {
-            InitialContext context = new InitialContext();
-            if (env.size() > 0) {
-                context = new InitialContext(env);
-            }
-            dataSource = (DataSource) context.lookup("jdbc/PlacesDS");
-        } catch (NamingException e) {
-            e.printStackTrace();
-            log.error("============ERROR===========",e);
-        }
-        return dataSource;
-    }
+
+	private DataSource getDataSource() {
+	        DataSource dataSource = null;
+	        Hashtable<String, String> env = new Hashtable<String, String>();
+	        try {
+	            InitialContext context = new InitialContext();
+	            if (env.size() > 0) {
+	                context = new InitialContext(env);
+	            }
+	            dataSource = (DataSource) context.lookup("jdbc/PlacesDS");
+	        } catch (NamingException e) {
+	            e.printStackTrace();
+	            log.error("============ERROR===========",e);
+	        }
+	        return dataSource;
+	    }
 
 		
 Update the index.jsp page to list stored place information. The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/index.jsp
