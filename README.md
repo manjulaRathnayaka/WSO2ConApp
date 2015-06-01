@@ -150,12 +150,14 @@ Open the new application, once the build and deployment processes finish. Note t
 
 Now we are ready with the sample application for QA. Lets branch out and promote to QA.
 
-1. Go to **Repo and Build page → Create branch from trunk**
+1. Go to **Repo and Build page → Create branch** from *trunk*
 2. From the **Overview** page, click on **Deploy** or **Open** newly created version
 3. Next, from the **Life Cycles Management** page, select the newly created version and promote to Testing
 4. Go back to **Overview** page to Open the promoted application in Testing environment
 
 As the QA person, lets try to find few bugs, create issue tickets and demote the application back to Development.
+
+*Note: For simplicity sake, in this tutorial, we are using single all-powerful account for all operations. In real life, you would likely invite your colleagues via Members dialog box, assign them different roles (Developer, QA, DevOps, etc.), and then invite to work with you on particular applications. See this tutorial for details: https://docs.wso2.com/display/AppCloud/Invite+and+add+Members+to+an+Application*
 
 1. Move to **Issues** page and create a new Issue. Make sure to select newly created version(1.0.0) for reporting the issues.
   1. Everyone can access this application, not secured
