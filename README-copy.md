@@ -137,10 +137,11 @@ https://github.com/manjulaRathnayaka/WSO2ConApp/tree/master/src/main/webapp/imag
 Commit and git push all the changes done. You should be able to access your application after completing the deployment and it should looks like similar to https://appserver.test.cloud.wso2.com/t/manjulaorg/webapps/mytravellog-1.0.0
 
 Now we are ready with the sample application for QA. Lets branch out and promote to QA.
-Go to Repo and Build page → Create branch from trunk.
-From the Overview page, click on Deploy or Open newly created version. 
-Next, from the Life Cycles Management page, select the newly created version and promote to Testing.
-Go back to Overview page to Open the promoted application in Testing environment.
+
+1. Go to Repo and Build page → Create branch from trunk
+2. From the Overview page, click on Deploy or Open newly created version
+3. Next, from the Life Cycles Management page, select the newly created version and promote to Testing
+4. Go back to Overview page to Open the promoted application in Testing environment
 
 As the QA person, lets try to find few bugs, create issue tickets and demote the application back to Development.
 Move to Issues page and create a new Issue. Make sure to select newly created version(1.0.0) for reporting the issues.
