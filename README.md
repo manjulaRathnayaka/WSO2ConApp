@@ -79,7 +79,7 @@ Notice the special code segment used to read the 'googleAPIKey' value:
 	
 If you called your property or application differently, make sure to change applicationKey name and resource path in above class.
 
-Create a JSP page called ‘search.jsp’ and use ‘searchPlace’ method to retrieve search results. 
+Create a JSP page called ‘search.jsp’ in path src/main/webapp/ and use ‘searchPlace’ method to retrieve search results. 
 
 The sample code is found at https://github.com/manjulaRathnayaka/WSO2ConApp/blob/master/src/main/webapp/search.jsp
 
