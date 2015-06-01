@@ -1,4 +1,4 @@
-# WSO2Con AppCloud Tutorial Steps
+# WSO2Con App Cloud Tutorial Steps
 
 * These instructions are hosted at: http://tinyurl.com/WSO2ConCloud
 * Sample code is available at: https://github.com/manjulaRathnayaka/WSO2ConApp
