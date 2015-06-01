@@ -1,15 +1,15 @@
-WSO2Con AppCloud Tutorial Steps
-====
+# WSO2Con AppCloud Tutorial Steps
+
+* These instructions are hosted at: http://tinyurl.com/WSO2ConCloud
+* Sample code is available at: https://github.com/manjulaRathnayaka/WSO2ConApp
 
 Register in https://cloud.wso2.com and login in.
 
 Create a Java web application:
 
-1. Give a name like MyTravelLog.
-
-2. Optionally, select an Icon for your application.
-
-3. Create the app.
+1. Give a name like MyTravelLog
+2. Optionally, select an Icon for your application
+3. Create the app
 
 In the overview page, click on Deploy or Open button to check the default Hello World page.
 
